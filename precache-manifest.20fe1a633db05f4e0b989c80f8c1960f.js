@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e59d83161f05ddc3e3055164617993b8",
+    "revision": "21a329ce1536a8c45a17b13e33684157",
     "url": "/micro-fe-child-1/index.html"
   },
   {
-    "revision": "adb8867b0d06c25ee043",
+    "revision": "e6fa36adfe9abc79350c",
     "url": "/micro-fe-child-1/static/css/main.89eba8f1.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/micro-fe-child-1/static/js/4.1e2e0a11.chunk.js"
   },
   {
-    "revision": "adb8867b0d06c25ee043",
-    "url": "/micro-fe-child-1/static/js/main.65f11487.chunk.js"
+    "revision": "e6fa36adfe9abc79350c",
+    "url": "/micro-fe-child-1/static/js/main.3812a779.chunk.js"
   },
   {
     "revision": "62901d616104f591ee40",
