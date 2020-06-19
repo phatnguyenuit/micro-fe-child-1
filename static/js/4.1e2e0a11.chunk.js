@@ -1,0 +1,2 @@
+(this["webpackJsonpapp-child-1"]=this["webpackJsonpapp-child-1"]||[]).push([[4],{29:function(e,n,t){"use strict";t.r(n),t.d(n,"Page2Component",(function(){return c}));var a=t(0),p=t.n(a),c=function(){return p.a.createElement("div",null,"Page2")},i=Object(a.memo)(c);i.displayName="Page2",n.default=i}}]);
+//# sourceMappingURL=4.1e2e0a11.chunk.js.map

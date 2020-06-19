@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/micro-fe-child-2/static/css/main.89eba8f1.chunk.css",
+    "main.js": "/micro-fe-child-2/static/js/main.d3c4d93f.chunk.js",
+    "main.js.map": "/micro-fe-child-2/static/js/main.d3c4d93f.chunk.js.map",
+    "runtime-main.js": "/micro-fe-child-2/static/js/runtime-main.e2e36a34.js",
+    "runtime-main.js.map": "/micro-fe-child-2/static/js/runtime-main.e2e36a34.js.map",
+    "static/js/2.ae97b1aa.chunk.js": "/micro-fe-child-2/static/js/2.ae97b1aa.chunk.js",
+    "static/js/2.ae97b1aa.chunk.js.map": "/micro-fe-child-2/static/js/2.ae97b1aa.chunk.js.map",
+    "static/js/3.69c5bef6.chunk.js": "/micro-fe-child-2/static/js/3.69c5bef6.chunk.js",
+    "static/js/3.69c5bef6.chunk.js.map": "/micro-fe-child-2/static/js/3.69c5bef6.chunk.js.map",
+    "static/js/4.1e2e0a11.chunk.js": "/micro-fe-child-2/static/js/4.1e2e0a11.chunk.js",
+    "static/js/4.1e2e0a11.chunk.js.map": "/micro-fe-child-2/static/js/4.1e2e0a11.chunk.js.map",
+    "index.html": "/micro-fe-child-2/index.html",
+    "precache-manifest.8cd48122d2ba7726aad46f4bda02620c.js": "/micro-fe-child-2/precache-manifest.8cd48122d2ba7726aad46f4bda02620c.js",
+    "service-worker.js": "/micro-fe-child-2/service-worker.js",
+    "static/css/main.89eba8f1.chunk.css.map": "/micro-fe-child-2/static/css/main.89eba8f1.chunk.css.map",
+    "static/js/2.ae97b1aa.chunk.js.LICENSE.txt": "/micro-fe-child-2/static/js/2.ae97b1aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2e36a34.js",
+    "static/js/2.ae97b1aa.chunk.js",
+    "static/css/main.89eba8f1.chunk.css",
+    "static/js/main.d3c4d93f.chunk.js"
+  ]
+}
