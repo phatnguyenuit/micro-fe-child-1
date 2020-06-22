@@ -1,20 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import {
+  StylesProvider,
+  createGenerateClassName,
+} from '@material-ui/core/styles';
+
 import './index.css';
-import App from './App';
+import App, { AppProps } from './App';
 
 import * as serviceWorker from './serviceWorker';
 import pkg from '../package.json';
 
-if (!document.getElementById(`${pkg.name}-container`)) {
+const generateClassName = createGenerateClassName({
+  seed: 'child-1',
+});
+
+const renderApp = (containerId: string, props?: Partial<AppProps>) => {
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <StylesProvider generateClassName={generateClassName}>
+        <App {...props} />
+      </StylesProvider>
     </React.StrictMode>,
-    document.getElementById('root')
+    document.getElementById(containerId)
   );
+};
 
+if (!document.getElementById(`${pkg.name}-container`)) {
+  renderApp('root');
   // If you want your app to work offline and load faster, you can change
   // unregister() to register() below. Note this comes with some pitfalls.
   // Learn more about service workers: https://bit.ly/CRA-PWA
@@ -24,12 +38,7 @@ if (!document.getElementById(`${pkg.name}-container`)) {
 const win = window as Record<string, any>;
 win[pkg.name] = {
   render: (containerId: string, basename?: string) => {
-    ReactDOM.render(
-      <React.StrictMode>
-        <App basename={basename} />
-      </React.StrictMode>,
-      document.getElementById(containerId)
-    );
+    renderApp(containerId, { basename, noTopbar: true });
     serviceWorker.unregister();
   },
   unmount: (containerId: string) => {
