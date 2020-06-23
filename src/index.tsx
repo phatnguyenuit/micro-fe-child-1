@@ -19,7 +19,7 @@ const generateClassName = createGenerateClassName({
 const renderApp = (containerId: string, props?: Partial<AppProps>) => {
   ReactDOM.render(
     <React.StrictMode>
-      <StylesProvider generateClassName={generateClassName}>
+      <StylesProvider key="child-1" generateClassName={generateClassName}>
         <App {...props} />
       </StylesProvider>
     </React.StrictMode>,
