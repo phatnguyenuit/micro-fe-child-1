@@ -2,14 +2,16 @@ import React, { memo, useContext, createContext } from 'react';
 
 import { Link as RouterLink } from 'react-router-dom';
 
-import Divider from '@material-ui/core/Divider';
-import Drawer from '@material-ui/core/Drawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import {
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from '@material-ui/core';
 
-import LabelIcon from '@material-ui/icons/Label';
+// import LabelIcon from '@material-ui/icons/Label';
 
 import { ROUTES } from 'routes';
 import useStyles from './styles';
@@ -47,7 +49,8 @@ export const SidebarComponent: React.FC = () => {
           <RouterLink to={path} key={`${name}-link`}>
             <ListItem button>
               <ListItemIcon>
-                <LabelIcon />
+                {/* <LabelIcon /> */}
+                icon
               </ListItemIcon>
               <ListItemText primary={name} />
             </ListItem>

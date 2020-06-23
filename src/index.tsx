@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import {
-  StylesProvider,
-  createGenerateClassName,
-} from '@material-ui/core/styles';
+import { StylesProvider, createGenerateClassName } from '@material-ui/core';
 
 import './index.css';
 import App, { AppProps } from './App';
@@ -14,6 +11,7 @@ import pkg from '../package.json';
 
 const generateClassName = createGenerateClassName({
   seed: 'child-1',
+  productionPrefix: 'child-1',
 });
 
 const renderApp = (containerId: string, props?: Partial<AppProps>) => {

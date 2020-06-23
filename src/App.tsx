@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-
+import { ThemeProvider, CssBaseline } from '@material-ui/core';
 import { BrowserRouter } from 'react-router-dom';
 
 import theme from 'theme';

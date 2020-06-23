@@ -1,4 +1,4 @@
-import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
+import { createStyles, Theme, makeStyles } from '@material-ui/core';
 
 import { drawerWidth } from 'components/Sidebar';
 

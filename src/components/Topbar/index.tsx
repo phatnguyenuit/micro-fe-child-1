@@ -1,12 +1,9 @@
 import React, { memo, useContext } from 'react';
 import clsx from 'clsx';
 
-import AppBar from '@material-ui/core/AppBar';
-import IconButton from '@material-ui/core/IconButton';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
 
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 
 import { SidebarContext } from 'components/Sidebar';
 
@@ -31,7 +28,8 @@ export const TopbarComponent: React.FC = () => {
           edge="start"
           className={clsx(classes.menuButton)}
         >
-          <MenuIcon />
+          {/* <MenuIcon /> */}
+          menu icon
         </IconButton>
         <Typography variant="h6" noWrap>
           {pkg.name.toUpperCase()}
