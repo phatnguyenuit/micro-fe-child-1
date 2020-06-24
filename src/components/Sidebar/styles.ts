@@ -19,6 +19,9 @@ export const styles = (theme: Theme) =>
       ...theme.mixins.toolbar,
       marginLeft: theme.spacing(2),
     },
+    navigationLink: {
+      textDecoration: 'none',
+    },
   });
 
 const useStyles = makeStyles(styles, { classNamePrefix: 'Sidebar' });

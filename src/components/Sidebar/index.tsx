@@ -11,7 +11,7 @@ import {
   ListItemText,
 } from '@material-ui/core';
 
-// import LabelIcon from '@material-ui/icons/Label';
+import { Home as HomeIcon, Label as LabelIcon } from '@material-ui/icons';
 
 import { ROUTES } from 'routes';
 import useStyles from './styles';
@@ -41,16 +41,21 @@ export const SidebarComponent: React.FC = () => {
       }}
     >
       <div className={classes.drawerHeader}>
-        <RouterLink to={'/'}>Home</RouterLink>
+        <RouterLink to={'/'} className={classes.navigationLink}>
+          <HomeIcon />
+        </RouterLink>
       </div>
       <Divider />
       <List>
         {ROUTES.map(({ path, name }) => (
-          <RouterLink to={path} key={`${name}-link`}>
+          <RouterLink
+            to={path}
+            key={`${name}-link`}
+            className={classes.navigationLink}
+          >
             <ListItem button>
               <ListItemIcon>
-                {/* <LabelIcon /> */}
-                icon
+                <LabelIcon />
               </ListItemIcon>
               <ListItemText primary={name} />
             </ListItem>

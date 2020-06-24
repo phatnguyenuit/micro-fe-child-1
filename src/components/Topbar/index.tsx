@@ -2,8 +2,7 @@ import React, { memo, useContext } from 'react';
 import clsx from 'clsx';
 
 import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
-
-// import MenuIcon from '@material-ui/icons/Menu';
+import { Menu as MenuIcon } from '@material-ui/icons';
 
 import { SidebarContext } from 'components/Sidebar';
 
@@ -28,8 +27,7 @@ export const TopbarComponent: React.FC = () => {
           edge="start"
           className={clsx(classes.menuButton)}
         >
-          {/* <MenuIcon /> */}
-          menu icon
+          <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap>
           {pkg.name.toUpperCase()}
